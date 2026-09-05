@@ -32,7 +32,7 @@
     "nagano-05m-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-nagano/nagano-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-nagano/nagano-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/r3-4-50cmdem' target='_blank'>この長野県CS立体図(0.5m)は長野県林務部長の承認を得て森林計画図を使用して作成したものである。承認番号 7森政第51-3号</a>",
       "tileSize": 256
@@ -48,7 +48,7 @@
     "hiroshima-1m-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/pref-hiroshima/hiroshimapc-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-1m-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://hiroshima-dobox.jp/index2' target='_blank'>広島県CS立体図(広島県3次元点群データを加工して作成)</a>",
       "tileSize": 256
@@ -56,7 +56,7 @@
     "hiroshima-05m-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/pref-hiroshima/hiroshimapc-2022-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-0.5m-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://hiroshima-dobox.jp/index2' target='_blank'>広島県CS立体図(広島県3次元点群データを加工して作成)</a>",
       "tileSize": 256
@@ -121,7 +121,7 @@
     "shizuoka-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/pref-shizuoka/shizuoka-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-shizuoka/shizuoka-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/shizuoka-2023-csmap' target='_blank'>静岡県CS立体図</a>",
       "tileSize": 256
@@ -138,7 +138,7 @@
     "osaka-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/pref-osaka/osaka-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-osaka/osaka-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/cs' target='_blank'>大阪府CS立体図</a>",
       "tileSize": 256
@@ -162,7 +162,7 @@
     "noto-cs-final": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/2024noto_dem' target='_blank'>林野庁能登地域CS立体図(能登地域0.5mDEM(発災後)を加工して作成)</a>",
       "tileSize": 256
@@ -170,7 +170,7 @@
     "tokyo-23ku-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-23ku-2024-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/23ku-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='' target='_blank'>東京都(区部)CS立体図(東京都デジタルツイン実現プロジェクト 区部点群データを加工して作成)</a>",
       "tileSize": 256
@@ -178,7 +178,7 @@
     "tokyo-tama-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-tama-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/tama-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-tama-2023' target='_blank'>東京都(多摩地域)CS立体図(東京都デジタルツイン実現プロジェクト 多摩地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -186,7 +186,7 @@
     "tokyo-shima-01-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-01-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-01-izu-oshima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -194,7 +194,7 @@
     "tokyo-shima-02-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-02-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-02-toshima-kozushima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -202,7 +202,7 @@
     "tokyo-shima-03-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-03-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-03-miyakejima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -210,7 +210,7 @@
     "tokyo-shima-04-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-04-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-04-mikurajima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -218,7 +218,7 @@
     "tokyo-shima-05-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-05-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-05-hachijojima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -226,7 +226,7 @@
     "tokyo-shima-06-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-06-2023-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-06-aogashima-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023' target='_blank'>東京都(島しょ地域)CS立体図(東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成)</a>",
       "tileSize": 256
@@ -234,7 +234,7 @@
     "kanagawa-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/pref-kanagawa/kanagawapc-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-kanagawa/kanagawa-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C+3%E6%AC%A1%E5%85%83%E7%82%B9%E7%BE%A4&sort=metadata_modified+desc' target='_blank'>神奈川県CS立体図(データ提供:(神奈川県環境農政局緑政部森林再生課))</a>",
       "tileSize": 256
@@ -242,7 +242,7 @@
     "wakayama-cs": {
       "type": "raster",
       "tiles": [
-        "https://xs489works.xsrv.jp/raster-tiles/pref-wakayama/wakayamapc-cs-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-wakayama/wakayama-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://wakayamaken.geocloud.jp/mp/22' target='_blank'>和歌山県CS立体図(和歌山県3次元点群データを加工して作成)</a>",
       "tileSize": 256
@@ -258,7 +258,7 @@
     "kyoto-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-kyoto/kyoto-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-kyoto/kyoto-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/dem05_kyoto' target='_blank'>京都府CS立体図(京都府「数値標高モデル（DEM）」を加工して作成)</a>",
       "tileSize": 256
@@ -266,7 +266,7 @@
     "yamanashi-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-yamanashi/yamanashi-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-yamanashi/yamanashi-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/yamanashi-pointcloud-2024' target='_blank'>山梨県CS立体図(山梨県グリッドデータDEMを加工して作成)</a>",
       "tileSize": 256
@@ -274,7 +274,7 @@
     "toyama-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-toyama/toyama-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-toyama/toyama-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/dem' target='_blank'>富山県CS立体図(富山県 数値標高モデル（DEM）を加工して作成)</a>",
       "tileSize": 256
@@ -282,7 +282,7 @@
     "miyagi-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-miyagi/miyagi-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-miyagi/miyagi-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://miyagi.dataeye.jp/resources/1523' target='_blank'>宮城県CS立体図(宮城県グリッドデータを加工して作成)</a>",
       "tileSize": 256
@@ -290,7 +290,7 @@
     "okayama-2024-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-okayama/okayama-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-okayama/okayama-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://i-box.pref.okayama.jp/datasets/251' target='_blank'>岡山県CS立体図(岡山県グリッドデータを加工して作成)</a>",
       "tileSize": 256
@@ -298,7 +298,7 @@
     "tottori-2025-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks2.xsrv.jp/raster-tiles/pref-tottori/tottori-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-tottori/tottori-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/dem05_tottori' target='_blank'>鳥取県CS立体図(鳥取県「数値標高モデル(DEM)0.5m」を加工して作成)</a>",
       "tileSize": 256
@@ -314,7 +314,7 @@
     "saitama-cs": {
       "type": "raster",
       "tiles": [
-        "https://shiworks.xsrv.jp/raster-tiles/pref-saitama/saitama-csmap-tiles/{z}/{x}/{y}.png"
+        "https://shi-works.com/raster-tiles/pref-saitama/saitama-csmap-tiles/{z}/{x}/{y}.webp"
       ],
       "attribution": "<a href='https://portal-pref-saitama.hub.arcgis.com/' target='_blank'>埼玉県CS立体図(埼玉県3次元点群データを加工して作成)</a>",
       "tileSize": 256
