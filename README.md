@@ -57,6 +57,8 @@ npm run preview
 
 ### CS 立体図
 
+> **2026-09 配信元を `*.xsrv.jp` から `shi-works.com` に移行しました。** 旧 URL を参照している場合は [MIGRATION.md](MIGRATION.md) の規則で書き換えてください（`xs489works.xsrv.jp` は 2026-09-30 停止）。
+
 #### 長野県林業総合センター
 
 | レイヤー | 解像度 | 出典 | ライセンス |
