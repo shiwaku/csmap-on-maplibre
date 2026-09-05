@@ -30,33 +30,33 @@ MapLibre GL JS / Mapbox GL JS / Leaflet / OpenLayers / QGIS / GDAL はいずれ�
 
 ## 対応表
 
-`https://shi-works.com/raster-tiles/` 以下のパスと `{z}/{x}/{y}.webp` を組み合わせてください。
+旧 URL と新 URL をそのまま併記します。ディレクトリ名が変わらないものも、ホスト名と拡張子は変わります。
 
-| データセット | 旧ホスト | 旧パス | 新パス |
-|---|---|---|---|
-| 大阪府 | xs489works | `pref-osaka/osaka-cs-tiles` | `pref-osaka/osaka-csmap-tiles` |
-| 静岡県 | shiworks | `pref-shizuoka/shizuoka-cs-tiles` | `pref-shizuoka/shizuoka-csmap-tiles` |
-| 東京都（区部） | shiworks | `tokyo-digitaltwin/tokyopc-23ku-2024-cs-tiles` | `tokyo-digitaltwin/23ku-csmap-tiles` |
-| 東京都（多摩地域） | shiworks | `tokyo-digitaltwin/tokyopc-tama-2023-cs-tiles` | `tokyo-digitaltwin/tama-csmap-tiles` |
-| 東京都（伊豆大島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-01-2023-cs-tiles` | `tokyo-digitaltwin/shima-01-izu-oshima-csmap-tiles` |
-| 東京都（利島・新島・式根島・神津島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-02-2023-cs-tiles` | `tokyo-digitaltwin/shima-02-toshima-kozushima-csmap-tiles` |
-| 東京都（三宅島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-03-2023-cs-tiles` | `tokyo-digitaltwin/shima-03-miyakejima-csmap-tiles` |
-| 東京都（御蔵島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-04-2023-cs-tiles` | `tokyo-digitaltwin/shima-04-mikurajima-csmap-tiles` |
-| 東京都（八丈島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-05-2023-cs-tiles` | `tokyo-digitaltwin/shima-05-hachijojima-csmap-tiles` |
-| 東京都（青ヶ島） | xs489works | `tokyo-digitaltwin/tokyopc-shima-06-2023-cs-tiles` | `tokyo-digitaltwin/shima-06-aogashima-csmap-tiles` |
-| 和歌山県 | xs489works | `pref-wakayama/wakayamapc-cs-tiles` | `pref-wakayama/wakayama-csmap-tiles` |
-| 神奈川県 | shiworks | `pref-kanagawa/kanagawapc-cs-tiles` | `pref-kanagawa/kanagawa-csmap-tiles` |
-| 能登地域（最終） | shiworks | `rinya/noto-2024-csmap-tiles` | 変更なし |
-| 広島県 0.5m | shiworks | `pref-hiroshima/hiroshimapc-2022-cs-tiles` | `pref-hiroshima/hiroshima-0.5m-csmap-tiles` |
-| 広島県 1m | xs489works | `pref-hiroshima/hiroshimapc-cs-tiles` | `pref-hiroshima/hiroshima-1m-csmap-tiles` |
-| 京都府 | shiworks2 | `pref-kyoto/kyoto-csmap-tiles` | 変更なし |
-| 山梨県 | shiworks2 | `pref-yamanashi/yamanashi-csmap-tiles` | 変更なし |
-| 富山県 | shiworks2 | `pref-toyama/toyama-csmap-tiles` | 変更なし |
-| 長野県 0.5m | shiworks2 | `pref-nagano/nagano-csmap-tiles` | 変更なし |
-| 宮城県 | shiworks2 | `pref-miyagi/miyagi-csmap-tiles` | 変更なし |
-| 岡山県 0.5m | shiworks2 | `pref-okayama/okayama-csmap-tiles` | 変更なし |
-| 埼玉県 | shiworks | `pref-saitama/saitama-csmap-tiles` | 変更なし |
-| 鳥取県 | shiworks2 | `pref-tottori/tottori-csmap-tiles` | 変更なし |
+| データセット | 旧 URL（停止予定） | 新 URL |
+|---|---|---|
+| 大阪府 | `https://xs489works.xsrv.jp/raster-tiles/pref-osaka/osaka-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-osaka/osaka-csmap-tiles/{z}/{x}/{y}.webp` |
+| 静岡県 | `https://shiworks.xsrv.jp/raster-tiles/pref-shizuoka/shizuoka-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-shizuoka/shizuoka-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（区部） | `https://shiworks.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-23ku-2024-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/23ku-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（多摩地域） | `https://shiworks.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-tama-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/tama-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（伊豆大島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-01-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-01-izu-oshima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（利島・新島・式根島・神津島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-02-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-02-toshima-kozushima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（三宅島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-03-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-03-miyakejima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（御蔵島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-04-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-04-mikurajima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（八丈島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-05-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-05-hachijojima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 東京都（青ヶ島） | `https://xs489works.xsrv.jp/raster-tiles/tokyo-digitaltwin/tokyopc-shima-06-2023-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/tokyo-digitaltwin/shima-06-aogashima-csmap-tiles/{z}/{x}/{y}.webp` |
+| 和歌山県 | `https://xs489works.xsrv.jp/raster-tiles/pref-wakayama/wakayamapc-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-wakayama/wakayama-csmap-tiles/{z}/{x}/{y}.webp` |
+| 神奈川県 | `https://shiworks.xsrv.jp/raster-tiles/pref-kanagawa/kanagawapc-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-kanagawa/kanagawa-csmap-tiles/{z}/{x}/{y}.webp` |
+| 能登地域（最終） | `https://shiworks.xsrv.jp/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.webp` |
+| 広島県 0.5m | `https://shiworks.xsrv.jp/raster-tiles/pref-hiroshima/hiroshimapc-2022-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-0.5m-csmap-tiles/{z}/{x}/{y}.webp` |
+| 広島県 1m | `https://xs489works.xsrv.jp/raster-tiles/pref-hiroshima/hiroshimapc-cs-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-1m-csmap-tiles/{z}/{x}/{y}.webp` |
+| 京都府 | `https://shiworks2.xsrv.jp/raster-tiles/pref-kyoto/kyoto-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-kyoto/kyoto-csmap-tiles/{z}/{x}/{y}.webp` |
+| 山梨県 | `https://shiworks2.xsrv.jp/raster-tiles/pref-yamanashi/yamanashi-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-yamanashi/yamanashi-csmap-tiles/{z}/{x}/{y}.webp` |
+| 富山県 | `https://shiworks2.xsrv.jp/raster-tiles/pref-toyama/toyama-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-toyama/toyama-csmap-tiles/{z}/{x}/{y}.webp` |
+| 長野県 0.5m | `https://shiworks2.xsrv.jp/raster-tiles/pref-nagano/nagano-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-nagano/nagano-csmap-tiles/{z}/{x}/{y}.webp` |
+| 宮城県 | `https://shiworks2.xsrv.jp/raster-tiles/pref-miyagi/miyagi-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-miyagi/miyagi-csmap-tiles/{z}/{x}/{y}.webp` |
+| 岡山県 0.5m | `https://shiworks2.xsrv.jp/raster-tiles/pref-okayama/okayama-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-okayama/okayama-csmap-tiles/{z}/{x}/{y}.webp` |
+| 埼玉県 | `https://shiworks.xsrv.jp/raster-tiles/pref-saitama/saitama-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-saitama/saitama-csmap-tiles/{z}/{x}/{y}.webp` |
+| 鳥取県 | `https://shiworks2.xsrv.jp/raster-tiles/pref-tottori/tottori-csmap-tiles/{z}/{x}/{y}.png` | `https://shi-works.com/raster-tiles/pref-tottori/tottori-csmap-tiles/{z}/{x}/{y}.webp` |
 
 ## 置換の例
 
