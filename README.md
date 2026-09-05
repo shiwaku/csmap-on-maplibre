@@ -172,6 +172,41 @@ npm run preview
 | シームレス標高タイル（陸域統合 DEM） | [産業技術総合研究所](https://tiles.gsj.jp/tiles/elev/tiles.html) | [産総研利用規約](https://www.gsj.jp/license/license.html)（CC BY 4.0 互換） |
 | 全国最新写真（シームレス） | [国土地理院](https://maps.gsi.go.jp/development/ichiran.html) | [国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html) |
 
+## ライセンス
+
+本プログラム（ビューワのソースコード・スタイル定義）は [MIT ライセンス](LICENSE)で提供されます。
+
+`https://shi-works.com/raster-tiles/` から配信している CS 立体図タイル（[CS 立体図](#cs-立体図)の表に記載した 23 データセット）は
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja) で提供されます。使用の際には下表の出典表示と本リポジトリへのリンクを提示してください。
+タイルは各自治体・林野庁が公開している 3 次元点群データ・数値標高モデル（DEM）を加工して作成したものです。
+使用・加工にあたっては各提供元の利用規約（上表のリンク）を必ずご確認ください。
+
+| タイル | 出典表示 |
+|---|---|
+| `pref-osaka/osaka-csmap-tiles` | 大阪府 CS 立体図（大阪府 微地形地図を加工して作成） |
+| `pref-shizuoka/shizuoka-csmap-tiles` | 静岡県 CS 立体図（VIRTUAL SHIZUOKA 静岡県 CS 立体図を加工して作成） |
+| `tokyo-digitaltwin/23ku-csmap-tiles` | 東京都(区部) CS 立体図（東京都デジタルツイン実現プロジェクト 区部点群データを加工して作成） |
+| `tokyo-digitaltwin/tama-csmap-tiles` | 東京都(多摩地域) CS 立体図（東京都デジタルツイン実現プロジェクト 多摩地域点群データを加工して作成） |
+| `tokyo-digitaltwin/shima-01〜06-*-csmap-tiles` | 東京都(島しょ地域) CS 立体図（東京都デジタルツイン実現プロジェクト 島しょ地域点群データを加工して作成） |
+| `pref-wakayama/wakayama-csmap-tiles` | 和歌山県 CS 立体図（和歌山県 3 次元点群データを加工して作成） |
+| `pref-kanagawa/kanagawa-csmap-tiles` | 神奈川県 CS 立体図（データ提供: 神奈川県環境農政局緑政部森林再生課） |
+| `rinya/noto-2024-csmap-tiles` | 林野庁 能登地域 CS 立体図（能登地域 0.5mDEM(発災後)を加工して作成） |
+| `pref-hiroshima/hiroshima-0.5m-csmap-tiles` `pref-hiroshima/hiroshima-1m-csmap-tiles` | 広島県 CS 立体図（広島県 3 次元点群データを加工して作成） |
+| `pref-kyoto/kyoto-csmap-tiles` | 京都府 CS 立体図（京都府「数値標高モデル（DEM）」を加工して作成） |
+| `pref-yamanashi/yamanashi-csmap-tiles` | 山梨県 CS 立体図（山梨県グリッドデータ DEM を加工して作成） |
+| `pref-toyama/toyama-csmap-tiles` | 富山県 CS 立体図（富山県 数値標高モデル（DEM）を加工して作成） |
+| `pref-nagano/nagano-csmap-tiles` | この長野県 CS 立体図(0.5m)は長野県林務部長の承認を得て森林計画図を使用して作成したものである。承認番号 7 森政第 51-3 号 |
+| `pref-miyagi/miyagi-csmap-tiles` | 宮城県 CS 立体図（宮城県グリッドデータを加工して作成） |
+| `pref-okayama/okayama-csmap-tiles` | 岡山県 CS 立体図（岡山県グリッドデータを加工して作成） |
+| `pref-saitama/saitama-csmap-tiles` | 埼玉県 CS 立体図（埼玉県 3 次元点群データを加工して作成） |
+| `pref-tottori/tottori-csmap-tiles` | 鳥取県 CS 立体図（鳥取県「数値標高モデル(DEM)0.5m」を加工して作成） |
+
+タイルは個人が運用するストレージ（Cloudflare R2）から配信しており、可用性は保証しません。URL は変更されることがあります
+（2026 年 9 月に `*.xsrv.jp` から `shi-works.com` へ移行し、拡張子を `.png` から `.webp` に変更しました）。
+大量のアクセスを伴う利用を予定している場合は、事前に [X(旧Twitter)](https://x.com/shi__works) までご連絡ください。
+
+上記以外のタイル（林野庁・森林総研・G 空間情報センターなどが配信するもの）は本リポジトリの配布物ではなく、各提供元の利用規約に従ってください。
+
 ## 免責事項
 
 利用者がデータを用いて行う一切の行為について、作成者は何ら責任を負いません。
