@@ -32,13 +32,13 @@ maplibregl.addProtocol("pmtiles", protocol.tile);
 const map = new maplibregl.Map({
   container: "map",
   style: `${import.meta.env.BASE_URL}style/pale.json`,
-  zoom: 9.62,
+  zoom: 9.3,
   minZoom: 0,
   maxZoom: 23,
   pitch: 0,
   bearing: 0,
   maxPitch: 85,
-  center: [139.1005, 36.0306],
+  center: [132.72, 34.58],
   hash: true,
   attributionControl: false,
 });

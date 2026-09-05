@@ -27750,7 +27750,7 @@
       "type": "raster",
       "source": "saitama-cs",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": 0.8
@@ -27794,7 +27794,7 @@
       "type": "raster",
       "source": "hiroshima-1m-cs",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": 0.8
@@ -27805,7 +27805,7 @@
       "type": "raster",
       "source": "hiroshima-05m-cs",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": 0.8
