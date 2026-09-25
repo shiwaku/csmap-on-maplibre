@@ -51,16 +51,7 @@ npm run preview
 
 ## QGIS で表示
 
-`qgis/` に、CS 立体図の全レイヤーを XYZ タイルとして一括で読み込む QGIS プロジェクトとスクリプトがあります。
-
-- `qgis/csmap.qgz` をダブルクリックして開く
-- 既存のプロジェクトに追加する場合は、QGIS の Python コンソールのエディタで `qgis/load_csmap.py` を開いて実行
-
-レイヤー一覧は `public/style/pale.json` と `src/layers.ts` から生成しています。ビューワ側でレイヤーを変更したら、スクリプト内の `CS_LAYERS` を更新し、次のコマンドで `.qgz` を作り直してください。
-
-```bash
-"C:/Program Files/QGIS 3.34.12/bin/python-qgis-ltr.bat" qgis/load_csmap.py qgis/csmap.qgz
-```
+同じ CS 立体図の全レイヤーを QGIS に一括で読み込むプロジェクトとスクリプトは [csmap-qgis](https://github.com/shiwaku/csmap-qgis) にあります。このリポジトリのレイヤー定義（`public/style/pale.json` / `src/layers.ts`）から生成しているので、レイヤーを変更したら csmap-qgis 側も作り直してください。
 
 ## デプロイ
 
