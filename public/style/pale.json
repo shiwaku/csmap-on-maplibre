@@ -199,20 +199,12 @@
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/cs' target='_blank'>大阪府CS立体図</a>",
       "tileSize": 256
     },
-    "nagaoka-cs": {
-      "type": "raster",
-      "tiles": [
-        "https://forestgeo.info/opendata/15_niigata/nagaoka/csmap_2024/{z}/{x}/{y}.webp"
-      ],
-      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/rinya-csmap-nagaoka2024' target='_blank'>林野庁長岡地域CS立体図</a>",
-      "tileSize": 256
-    },
     "noto-cs": {
       "type": "raster",
       "tiles": [
         "https://rinya.geospatial.jp/tile/csmaptile_noto/{z}/{x}/{y}.png"
       ],
-      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/2024noto_rinya' target='_blank'>林野庁能登地域CS立体図(発災後)</a>",
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake' target='_blank'>林野庁能登地域CS立体図(発災後)</a>",
       "tileSize": 256
     },
     "noto-cs-final": {
@@ -220,7 +212,7 @@
       "tiles": [
         "https://shi-works.com/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.webp"
       ],
-      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/2024noto_dem' target='_blank'>林野庁能登地域CS立体図(能登地域0.5mDEM(発災後)を加工して作成)</a>",
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake' target='_blank'>林野庁能登地域CS立体図(能登地域0.5mDEM(発災後)を加工して作成)</a>",
       "tileSize": 256
     },
     "toyama-cs": {
@@ -326,6 +318,106 @@
       ],
       "attribution": "<a href='https://maps.gsi.go.jp/development/ichiran.html#landslide' target='_blank'>地理院タイル(地すべり地形分布図日本全国版（防災科学技術研究所）)</a>",
       "tileSize": 256
+    },
+    "noto-nagaoka-rinya-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_r06eq_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake' target='_blank'>林野庁 令和6年能登半島地震CS立体図(能登・長岡)</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "yamagata-shonai-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_028_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/028_syounai' target='_blank'>林野庁 山形県(庄内森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "nagano-inatani-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_067_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/inatani_067' target='_blank'>林野庁 長野県(伊那谷森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "aichi-owari-nishimikawa-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_078_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/owarinishimikawa_078' target='_blank'>林野庁 愛知県(尾張西三河森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "aichi-higashimikawa-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_079_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/higashimikawa_079' target='_blank'>林野庁 愛知県(東三河森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "mie-kitaise-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_081_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/kitaise_081' target='_blank'>林野庁 三重県(北伊勢森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "tokushima-yoshinogawa-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_116_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/yoshinokawa_116' target='_blank'>林野庁 徳島県(吉野川森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "tokushima-naka-kaifu-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_117_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/tokushima_aerial_laser' target='_blank'>林野庁 徳島県(那賀・海部川森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "oita-nanbu-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_143_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/oita_aerial_laser' target='_blank'>林野庁 大分県(大分南部森林計画区)CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
+    },
+    "r2-7-gouu-cs": {
+      "type": "raster",
+      "tiles": [
+        "https://rinya-tiles.geospatial.jp/csmap_r0207tr_2025/{z}/{x}/{y}.webp"
+      ],
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/r2_7_gouu' target='_blank'>林野庁 令和2年7月豪雨CS立体図</a>",
+      "tileSize": 256,
+      "minzoom": 8,
+      "maxzoom": 18
     }
   },
   "layers": [
@@ -27977,17 +28069,6 @@
       }
     },
     {
-      "id": "nagaoka-cs",
-      "type": "raster",
-      "source": "nagaoka-cs",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-opacity": 0.8
-      }
-    },
-    {
       "id": "noto-cs",
       "type": "raster",
       "source": "noto-cs",
@@ -28134,6 +28215,116 @@
       "id": "tottori-2025-cs",
       "type": "raster",
       "source": "tottori-2025-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "noto-nagaoka-rinya-cs",
+      "type": "raster",
+      "source": "noto-nagaoka-rinya-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "yamagata-shonai-cs",
+      "type": "raster",
+      "source": "yamagata-shonai-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "nagano-inatani-cs",
+      "type": "raster",
+      "source": "nagano-inatani-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "aichi-owari-nishimikawa-cs",
+      "type": "raster",
+      "source": "aichi-owari-nishimikawa-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "aichi-higashimikawa-cs",
+      "type": "raster",
+      "source": "aichi-higashimikawa-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "mie-kitaise-cs",
+      "type": "raster",
+      "source": "mie-kitaise-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "tokushima-yoshinogawa-cs",
+      "type": "raster",
+      "source": "tokushima-yoshinogawa-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "tokushima-naka-kaifu-cs",
+      "type": "raster",
+      "source": "tokushima-naka-kaifu-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "oita-nanbu-cs",
+      "type": "raster",
+      "source": "oita-nanbu-cs",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "r2-7-gouu-cs",
+      "type": "raster",
+      "source": "r2-7-gouu-cs",
       "layout": {
         "visibility": "none"
       },

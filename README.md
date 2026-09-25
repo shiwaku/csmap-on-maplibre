@@ -1,6 +1,6 @@
 # csmap-on-maplibre
 
-国土地理院の最適化ベクトルタイルを背景に、全国の **CS立体図** 32 レイヤーをオーバーレイ表示する Web 地図アプリケーションです。産総研シームレス標高タイル（陸域統合 DEM）による 3D 地形表示に対応しています。
+国土地理院の最適化ベクトルタイルを背景に、全国の **CS立体図** 41 レイヤーをオーバーレイ表示する Web 地図アプリケーションです。産総研シームレス標高タイル（陸域統合 DEM）による 3D 地形表示に対応しています。
 
 CS 立体図は林野庁・森林総合研究所・各自治体が公開しているタイルのほか、公開されているオープンデータ（3 次元点群・DEM）から作成したものを含みます。法務省地図 XML、3D 都市モデル（PLATEAU）、全国最新写真、山城データも重ねて表示できます。
 
@@ -10,7 +10,7 @@ CS 立体図は林野庁・森林総合研究所・各自治体が公開して�
 
 ## 機能
 
-- CS 立体図 32 レイヤーの表示切り替え
+- CS 立体図 41 レイヤーの表示切り替え
 - CS 立体図の不透明度スライダー
 - 3D 地形表示（産総研シームレス標高タイル）
 - 地名検索（国土地理院 地名検索 API）
@@ -49,6 +49,19 @@ npm run build
 npm run preview
 ```
 
+## QGIS で表示
+
+`qgis/` に、CS 立体図の全レイヤーを XYZ タイルとして一括で読み込む QGIS プロジェクトとスクリプトがあります。
+
+- `qgis/csmap.qgz` をダブルクリックして開く
+- 既存のプロジェクトに追加する場合は、QGIS の Python コンソールのエディタで `qgis/load_csmap.py` を開いて実行
+
+レイヤー一覧は `public/style/pale.json` と `src/layers.ts` から生成しています。ビューワ側でレイヤーを変更したら、スクリプト内の `CS_LAYERS` を更新し、次のコマンドで `.qgz` を作り直してください。
+
+```bash
+"C:/Program Files/QGIS 3.34.12/bin/python-qgis-ltr.bat" qgis/load_csmap.py qgis/csmap.qgz
+```
+
 ## デプロイ
 
 `main` ブランチへの push で GitHub Actions が自動的にビルド・GitHub Pages へデプロイします。
@@ -83,9 +96,20 @@ npm run preview
 | 栃木県 | 令和 3〜4 年度 航空レーザ測量 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/csmap_tochigi) | [利用規約](https://www.geospatial.jp/ckan/dataset/csmap_tochigi/resource/4dffe2ac-511f-49eb-87c4-29c936ed2cb7)参照 |
 | 兵庫県 | 令和 2〜3 年度 航空レーザ測量 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/csmap_hyogo) | [利用規約](https://www.geospatial.jp/ckan/dataset/csmap_hyogo/resource/ab5fab0d-99a1-4638-9807-a09eb53e14b7)参照 |
 | 高知県 | 平成 30 年度 林野庁 航空レーザ測量 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/csmap_kochi) | [利用規約](https://www.geospatial.jp/ckan/dataset/csmap_kochi/resource/86bbb203-3025-4c58-b130-b8fe692f9c09)参照 |
-| 能登地域（速報） | 令和 6 年能登半島地震 発災後 航空レーザ測量 速報成果 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/2024noto_rinya) | CC BY 4.0 互換 |
-| 長岡地域 | 令和 6 年能登半島地震 発災後 航空レーザ測量 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/rinya-csmap-nagaoka2024) | [PDL1.0](https://www.digital.go.jp/resources/open_data/public_data_license_v1.0) |
-| 滋賀県 | 滋賀県森林政策課 航空レーザ測量成果 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/rinya-shiga-maptiles) | [PDL1.0](https://www.digital.go.jp/resources/open_data/public_data_license_v1.0) |
+| 能登地域（速報） | 令和 6 年能登半島地震 発災後 航空レーザ測量 速報成果 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake) | CC BY 4.0 互換 |
+| 能登・長岡（2025） | 令和 6 年能登半島地震 DEM から林野庁が加工（旧「長岡地域」を含む） | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 山形県（庄内） | 庄内森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/028_syounai) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 長野県（伊那谷） | 伊那谷森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/inatani_067) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 愛知県（尾張西三河） | 尾張西三河森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/owarinishimikawa_078) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 愛知県（東三河） | 東三河森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/higashimikawa_079) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 三重県（北伊勢） | 北伊勢森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/kitaise_081) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 徳島県（吉野川） | 吉野川森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/yoshinokawa_116) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 徳島県（那賀・海部川） | 那賀・海部川森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/tokushima_aerial_laser) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 大分県（大分南部） | 大分南部森林計画区 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/oita_aerial_laser) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 令和 2 年 7 月豪雨（九州） | 令和 2 年 7 月豪雨 DEM から林野庁が加工 | [G空間情報センター](https://www.geospatial.jp/ckan/dataset/r2_7_gouu) | [政府標準利用規約](https://www.digital.go.jp/resources/open_data/) |
+| 滋賀県 | 滋賀県森林政策課 航空レーザ測量成果 | [森林情報オープンデータ](https://forestgeo.info/)（G空間のデータセットページは 2026-09 時点で削除） | [PDL1.0](https://www.digital.go.jp/resources/open_data/public_data_license_v1.0) |
+
+「能登・長岡（2025）」から「令和 2 年 7 月豪雨（九州）」までのレイヤーは `https://rinya-tiles.geospatial.jp/csmap_<コード>_2025/{z}/{x}/{y}.webp`（z8–18）から配信されています。
 
 #### 愛媛県
 
@@ -129,7 +153,7 @@ npm run preview
 | 東京都（島しょ地域） | 0.25m | 4–19 | ※下記参照 | [東京都デジタルツイン 島しょ地域点群データ](https://www.geospatial.jp/ckan/dataset/tokyopc-shima-2023) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 和歌山県 | 1m | 4–17 | `https://shi-works.com/raster-tiles/pref-wakayama/wakayama-csmap-tiles/{z}/{x}/{y}.webp` | [和歌山県 3 次元点群データ](https://www.pref.wakayama.lg.jp/prefg/012100/d00213012.html) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 神奈川県 | 0.5m | 4–18 | `https://shi-works.com/raster-tiles/pref-kanagawa/kanagawa-csmap-tiles/{z}/{x}/{y}.webp` | [神奈川県 3 次元点群データ](https://www.geospatial.jp/ckan/dataset?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C+%E7%82%B9%E7%BE%A4) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| 能登地域（最終） | 0.5m | 4–18 | `https://shi-works.com/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.webp` | [林野庁 能登地域 0.5mDEM(発災後)](https://www.geospatial.jp/ckan/dataset/2024noto_dem) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| 能登地域（最終） | 0.5m | 4–18 | `https://shi-works.com/raster-tiles/rinya/noto-2024-csmap-tiles/{z}/{x}/{y}.webp` | [林野庁 能登地域 0.5mDEM(発災後)](https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 広島県（広島県 0.5m） | 0.5m | 4–18 | `https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-0.5m-csmap-tiles/{z}/{x}/{y}.webp` | [広島県 3 次元点群データ](https://hiroshima-dobox.jp/index2) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 広島県（広島県 1m） | 1m | 4–17 | `https://shi-works.com/raster-tiles/pref-hiroshima/hiroshima-1m-csmap-tiles/{z}/{x}/{y}.webp` | [広島県 3 次元点群データ](https://hiroshima-dobox.jp/index2) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 京都府 | 0.5m | 4–18 | `https://shi-works.com/raster-tiles/pref-kyoto/kyoto-csmap-tiles/{z}/{x}/{y}.webp` | [京都府 数値標高モデル（DEM）](https://www.geospatial.jp/ckan/dataset/dem05_kyoto) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
@@ -153,7 +177,7 @@ npm run preview
 
 **能登地域（最終）の原初データについて**
 
-原初データの[林野庁 能登地域 0.5mDEM(発災後)](https://www.geospatial.jp/ckan/dataset/2024noto_dem)は、令和 6 年能登半島地震の発災後（令和 6 年 3〜4 月）に林野庁との連携の下で国土地理院が実施した航空レーザ測量業務（能登北部・中部・南部地区）の最終成果を基に、林野庁で簡易的に変換した 0.5m 解像度の数値標高モデルです。**グリッドデータを簡易的に変換したものであるため、公共測量の用に供するものではないことを前提に利用してください。**
+原初データの[林野庁 能登地域 0.5mDEM(発災後)](https://www.geospatial.jp/ckan/dataset/r6_noto-peninsula-earthquake)は、令和 6 年能登半島地震の発災後（令和 6 年 3〜4 月）に林野庁との連携の下で国土地理院が実施した航空レーザ測量業務（能登北部・中部・南部地区）の最終成果を基に、林野庁で簡易的に変換した 0.5m 解像度の数値標高モデルです。**グリッドデータを簡易的に変換したものであるため、公共測量の用に供するものではないことを前提に利用してください。**
 
 なお、令和 6 年 7 月に公開された微地形表現図等に使われている速報成果とは異なり、手動フィルタリング／コース間調整等が行われた点群データ（最終成果）を基に作成されています。
 

@@ -11,6 +11,7 @@ export type LayerDef = {
 /** CS立体図（各県公開のラスタタイル）。地域はほぼ重ならないため全ONでも実用になる。 */
 export const CS_LAYERS: LayerDef[] = [
   { ids: ["miyagi-cs"], name: "宮城県CS立体図" },
+  { ids: ["yamagata-shonai-cs"], name: "山形県(庄内)CS立体図" },
   { ids: ["fukushima-cs"], name: "福島県CS立体図" },
   { ids: ["tochigi-cs"], name: "栃木県CS立体図" },
   { ids: ["saitama-cs"], name: "埼玉県CS立体図" },
@@ -28,15 +29,19 @@ export const CS_LAYERS: LayerDef[] = [
     name: "東京都(島しょ地域)CS立体図",
   },
   { ids: ["kanagawa-cs"], name: "神奈川県CS立体図" },
-  { ids: ["nagaoka-cs"], name: "長岡地域CS立体図" },
+  { ids: ["noto-nagaoka-rinya-cs"], name: "能登・長岡CS立体図(林野庁2025)" },
   { ids: ["toyama-cs"], name: "富山県CS立体図" },
   { ids: ["noto-cs"], name: "能登CS立体図(速報成果)" },
   { ids: ["noto-cs-final"], name: "能登CS立体図(最終成果)" },
   { ids: ["yamanashi-cs"], name: "山梨県CS立体図" },
   { ids: ["nagano-cs"], name: "長野県CS立体図(1m)" },
   { ids: ["nagano-05m-cs"], name: "長野県CS立体図(0.5m)" },
+  { ids: ["nagano-inatani-cs"], name: "長野県(伊那谷)CS立体図" },
   { ids: ["gifu-cs"], name: "岐阜県CS立体図" },
   { ids: ["shizuoka-cs"], name: "静岡県CS立体図" },
+  { ids: ["aichi-owari-nishimikawa-cs"], name: "愛知県(尾張西三河)CS立体図" },
+  { ids: ["aichi-higashimikawa-cs"], name: "愛知県(東三河)CS立体図" },
+  { ids: ["mie-kitaise-cs"], name: "三重県(北伊勢)CS立体図" },
   { ids: ["shiga-cs"], name: "滋賀県CS立体図" },
   { ids: ["kyoto-cs"], name: "京都府CS立体図" },
   { ids: ["osaka-cs"], name: "大阪府CS立体図" },
@@ -49,9 +54,13 @@ export const CS_LAYERS: LayerDef[] = [
   { ids: ["hiroshima-cs"], name: "広島県CS立体図(林野庁0.5m)" },
   { ids: ["hiroshima-05m-cs"], name: "広島県CS立体図(広島県0.5m)", on: true },
   { ids: ["hiroshima-1m-cs"], name: "広島県CS立体図(広島県1m)", on: true },
+  { ids: ["tokushima-yoshinogawa-cs"], name: "徳島県(吉野川)CS立体図" },
+  { ids: ["tokushima-naka-kaifu-cs"], name: "徳島県(那賀・海部川)CS立体図" },
   { ids: ["ehime-cs"], name: "愛媛県CS立体図" },
   { ids: ["kochi-cs"], name: "高知県CS立体図" },
   { ids: ["kumamoto-oita-cs"], name: "熊本県・大分県CS立体図" },
+  { ids: ["oita-nanbu-cs"], name: "大分県(大分南部)CS立体図" },
+  { ids: ["r2-7-gouu-cs"], name: "令和2年7月豪雨CS立体図(九州)" },
 ];
 
 /** CS立体図以外の重ねもの。 */
